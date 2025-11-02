@@ -70,6 +70,8 @@ def main():
         model = YOLO(MODEL_PATH)
         model.export(
             format="onnx",
+            opset=13,         # ✅ 降为 13，稳定支持
+            simplify=False,   # 防止 onnxsim 改坏图
             #opset=12,
             #simplify=True,
             #imgsz=640,
