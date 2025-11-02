@@ -2,7 +2,7 @@ import os
 import requests
 from ultralytics import YOLO
 
-MODEL_URL = os.getenv("MODEL_URL", "https://huggingface.co/opendatalab/PDF-Extract-Kit-1.0/blob/main/models/Layout/YOLO/doclayout_yolo_ft.pt")
+MODEL_URL = os.getenv("MODEL_URL", "https://huggingface.co/opendatalab/PDF-Extract-Kit-1.0/resolve/main/models/Layout/YOLO/doclayout_yolo_ft.pt?download=true")
 MODEL_PATH = "doclayout_yolo_ft.pt"
 ONNX_PATH = "doclayout_yolo_ft.onnx"
 
